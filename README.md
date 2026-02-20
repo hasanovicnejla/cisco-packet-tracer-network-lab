@@ -5,7 +5,7 @@
 
 This repo documents two tasks from my computer networks lab exam. The exam itself covered more ground, but I've chosen to focus here on the parts that involved hands-on implementation: subnetting an IP block by hand and building a fully functional multi-subnet topology in Cisco Packet Tracer covering everything from router configuration to DHCP, DNS, and HTTP.
 
-The exam covered two main tasks: subnetting calculations (Task 3) and building + verifying the actual topology in Packet Tracer (Task 4). This README explains the what and why behind each part. If you want to see the step-by-step implementation, configuration details, and screenshots, check out `notes.docx`, that's where all the nitty-gritty lives. :)
+The exam covered two main tasks: subnetting calculations (Task 3) and building + verifying the actual topology in Packet Tracer (Task 4). This README explains the what and why behind each part. If you want to see the step-by-step implementation, configuration details, and screenshots, check out `notes.pdf`, that's where all the nitty-gritty lives. :)
 
 ## Technologies Used
 
@@ -49,7 +49,7 @@ The **first and last usable host** addresses are what's left between those two. 
 | Subnet 3 (link)   | 13           | /28 (255.255.255.240)   | 122.87.97.128 | 122.87.97.143  | 122.87.97.129  | 122.87.97.142  |
 
 
-Subnet 3 is a point-to-point link that connects the two routers together. Router 1 gets the first usable address and Router 2 gets the last. All calculation steps are in `notes.docx`.
+Subnet 3 is a point-to-point link that connects the two routers together. Router 1 gets the first usable address and Router 2 gets the last. All calculation steps are in `notes.pdf`.
 
 ## Task 4 - Packet Tracer Topology 
 
@@ -85,4 +85,4 @@ I verified this by opening the web browser on PCs in both Subnet 1 and Subnet 2 
 
 ## Full Documentation
 
-Everything that isn't in this README like calculation steps, configuration screenshots, and implementation details are in **`notes.docx`**. That file is the main reference for how things were actually set up.
+Everything that isn't in this README like calculation steps, configuration screenshots, and implementation details are in **`notes.pdf`**. That file is the main reference for how things were actually set up.
