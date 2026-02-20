@@ -18,6 +18,11 @@ The lab was built using **Cisco Packet Tracer** as the simulation environment. O
 ├── README.md          ← you are here
 ├── notes.pdf         ← full working notes with screenshots and config 
 ├── topology.pkt       ← Cisco Packet Tracer project file
+assets
+   └── topology-overview.png
+   └── ping-pc1-pc5.png
+   └── browser-subnet1.png
+   └── browser-subnet2.png
 
 ```
 
