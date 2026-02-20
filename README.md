@@ -58,7 +58,7 @@ The topology was built in a sensible order: routers first, then DHCP, then the a
 
 **DNS and HTTP** were the final piece. The HTTP service was enabled on the server, and a DNS record was created linking `lab-group-a.ba` to the server's IP. Because DHCP already told every client where the DNS server is, any PC in either subnet can type in the domain name and get the right IP back automatically.
 
-> ![Full Topology](screenshots/topology-overview.png)
+> ![Full Topology](assets/topology-overview.png)
 
 ### Subtask 1 – Ping Between Subnets
 
@@ -66,7 +66,7 @@ To confirm connectivity, I used PC1 in Subnet 1 to ping PC5 in Subnet 2.
 
 Worth noting: the first one or two ping packets will time out, and that's completely normal. Before sending any ICMP echo request, the device has no idea what MAC address belongs to the next hop (the router). So it first sends out an **ARP broadcast** essentially asking the network "who has this IP address?" Once the router responds and the MAC address is cached, the ICMP packets go through without any issues. Seeing this timeout-then-success pattern actually confirms that ARP, routing, and ICMP are all doing their jobs correctly.
 
-> ![Ping from PC1 to PC5](screenshots/ping-pc1-pc5.png)
+> ![Ping from PC1 to PC5](assets/ping-pc1-pc5.png)
 
 ### Subtask 2 - Web Server Access by Domain Name
 
@@ -74,9 +74,9 @@ The goal here was to prove that the HTTP server works from both subnets using `l
 
 I verified this by opening the web browser on PCs in both Subnet 1 and Subnet 2 and navigating to `lab-group-a.ba`. A successful page load means the entire chain worked - name resolution, routing, and the HTTP service itself.
 
-> ![Browser Subnet 1](screenshots/browser-subnet1.png)
+> ![Browser Subnet 1](assets/browser-subnet1.png)
 
-> ![Browser Subnet 2](screenshots/browser-subnet2.png)
+> ![Browser Subnet 2](assets/browser-subnet2.png)
 
 ## Full Documentation
 
